@@ -13,6 +13,39 @@ namespace Hello_World
         static void Main(string[] args)
         {
             Console.WriteLine("Hello WOrld!");
+<<<<<<< Updated upstream
+=======
+            Console.WriteLine("Please enter your name:");
+            Console.WriteLine("Hello " + Name());
+            int num = int.Parse(Console.ReadLine());
+            if (IsEven(num))
+            {
+                Console.WriteLine("The inputed number is even");
+            }
+            else
+            {
+                Console.WriteLine("The inputed number is odd");
+            }
+        }
+
+        static string Name()
+        {
+            String name = Console.ReadLine();
+            return name;
+        }
+        
+        static Boolean IsEven(int innumber)
+        {
+            if (innumber % 2 == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+>>>>>>> Stashed changes
         }
     }
 }
